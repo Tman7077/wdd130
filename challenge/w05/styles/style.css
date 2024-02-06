@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    background-color: gray;
+}
+#banner {
+    width: 100%;
+}
+footer {
+    background-color: gray;
+    padding: 5%;
+    text-align: center;
+}
+.footer-img {
+    width: 20%;
+    margin: 5%;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #3d3d3d;
+    border-width: 10px;
+}
