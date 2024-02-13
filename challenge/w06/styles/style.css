@@ -1,0 +1,34 @@
+#grid {
+    display: grid;
+    width: 75%;
+    grid-template-columns: 1fr 1fr;
+}
+#gray-bg {
+    width: 100%;
+    background-color: #AFAFAF;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#cherries-img {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#tas {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    z-index: 1;
+    text-align: center;
+    font-size: 6em;
+}
+div div {
+    height: 100%;
+    display: flex;
+}
+div div p {
+    align-self: flex-end;
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
+    color: #AF0000
+}
