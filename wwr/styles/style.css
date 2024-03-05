@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Oswald&display=swap');
 #content {
     font-family: Nunito, Futura, sans-serif;
+    margin: 0 auto;
+}
+main {
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -177,6 +180,40 @@ nav {
     opacity: .6;
     transform: scale(1.1);
 }
+.river-description {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+}
+.river-img {
+    width: 100%;
+}
+#salmon-river img, #grand-canyon img {
+    grid-column: 1/9;
+    grid-row: 1/2;
+}
+#desolation-gray-canyon img {
+    grid-column: 8/16;
+    grid-row: 1/2;
+}
+#salmon-river section, #grand-canyon section {
+    grid-column: 9/16;
+    grid-row: 1/2;
+}
+#desolation-gray-canyon section {
+    grid-column: 1/8;
+    grid-row: 1/2;
+}
+.river-description section {
+    margin: 0.75em;
+}
+.river-description p {
+    font-size: 0.75em;
+    color: white;
+}
+h1 {
+    text-align: center;
+    color: #FFBF1F;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -219,5 +256,9 @@ nav {
     }
     footer {
         margin-top: 25px;
+    }
+    .river-description {
+        display: flex;
+        flex-direction: column;
     }
 }
