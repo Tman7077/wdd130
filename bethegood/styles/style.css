@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Oswald&display=swap');
+body {
+    background-color: #FFDE59;
+    margin: 0 auto;
+    display: grid;
+    font-family: Nunito, Futura, sans-serif;
+    font-size: 24px;
+}
+header {
+    z-index: 1;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 256px 1fr;
+}
+nav {
+    float: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 16px;
+}
+#home-nav a {
+    color: white;
+}
+nav a:hover, #home-nav a:hover {
+    color: #173436;
+}
+footer {
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    text-align: center;
+    .social {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+footer a {
+    color: black;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #03989E;
+}
+h1 {
+    font-family: Oswald;
+}
+#home-hero {
+    margin-top: -332px;
+    display: grid;
+    .hero-img {
+        width: 100%;
+        min-height: 100vh;
+        grid-area: 1/1/2/2;
+        object-fit: cover;
+    }
+    .hero-msg {
+        grid-area: 1/1/2/2;
+        margin-left: 64px;
+        margin-top: 420px;
+        color: white;
+        font-size: 48px;
+    }
+}
+#home-main {
+    background-color: white;
+    padding: 64px;
+    margin: auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+}
+#home-main img {
+    max-width: 75%;
+    margin: auto
+}
+#home-main section {
+    text-align: center;
+}
