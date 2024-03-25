@@ -77,8 +77,40 @@ h1 {
 }
 #home-main img {
     max-width: 75%;
-    margin: auto
+    margin: auto;
 }
 #home-main section {
     text-align: center;
+}
+#who-we-are, #how-you-can-help {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 2fr;
+    padding: 64px;
+}
+#who-we-are div img, #how-you-can-help div img {
+    max-width: 100%;
+}
+#who-we-are div h1 {
+    color: #03989E;
+}
+#who-we-are p, 
+  #how-you-can-help div p,
+  #how-you-can-help div section h2 {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+#how-you-can-help {
+    background-color: #173436;
+    color: white;
+}
+#how-you-can-help div h1, #how-you-can-help div section h2 {
+    color: #FFDE59;
+}
+#hych-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .quote, .drive {
+        grid-column: 1/3;
+    }
 }
